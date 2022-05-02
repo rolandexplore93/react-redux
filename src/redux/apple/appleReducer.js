@@ -8,7 +8,7 @@ const appleReducer = (state = initialState, action) => {
     switch (action.type) {
         case BUY_APPLE: return {
             ...state,
-            numOfApple: state.numOfApple - 5
+            numOfApple: state.numOfApple - action.payload
         }
             
     
